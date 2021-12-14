@@ -44,7 +44,7 @@ public class EcommerceApplication {
     		admin.setFullName("admin");
     		admin.setDeleted(false);
     		admin.setEmail("admin@gmail.com");
-    		admin.setPassword(bCryptPasswordEncoder.encode("admin"));
+    		admin.setPassword("admin");
     		admin.setRole("ADMIN");
     		simple.setFullName("John Doe");
     		simple.setPassword("123456");
