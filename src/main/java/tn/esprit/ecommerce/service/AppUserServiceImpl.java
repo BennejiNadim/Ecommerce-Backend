@@ -90,5 +90,32 @@ public class AppUserServiceImpl implements AppUserService {
 	public List<AppUser> findAllUsersOrderedByFullNameDesc() {
 		return appUserRep.findAllOrderByFullNameDesc();
 	} */
+	@Override
+	public AppUser addAdmin(AppUser user) {
+		AppUser newUser = new AppUser();
+		if(user!=null)
+		{
+			if(appUserRep.findByEmail(user.getEmail())!=null){
+				return null ;
+			}
+			if(user.getEmail()!=null){
+				newUser.setEmail(user.getEmail());
+			}
+			if(user.getPassword()!=null){
+				newUser.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+			}
+			if(user.getFullName()!=null)
+			{
+				newUser.setFullName(user.getFullName());
+			}
+			if(user.getRole()!=null){
+				newUser.setRole(user.getRole());
+			}
+			newUser.setDeleted(false);
+			newUser.setRole("ADMIN");
+			return appUserRep.save(newUser);
+		}
+		return newUser;
+	}
 
 }

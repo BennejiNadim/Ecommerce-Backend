@@ -190,3 +190,516 @@
 2021-12-14 15:47:35.870  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 2021-12-14 15:47:36.049  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2021-12-14 15:47:36.050  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 15:47:36.186  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 15:47:36.218  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf0c3ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@248a00aa, org.springframework.security.web.header.HeaderWriterFilter@3d51027e, org.springframework.security.web.authentication.logout.LogoutFilter@6f6357d3, tn.esprit.ecommerce.security.JWTAuthorizationFilter@a2bdec6, tn.esprit.ecommerce.security.JWTAuthenticationFilter@38f5000e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@744e0b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4139a599, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f9e4d1a, org.springframework.security.web.session.SessionManagementFilter@4ad20539, org.springframework.security.web.access.ExceptionTranslationFilter@3fcdeb2c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d5956bc]
+2021-12-14 15:47:36.276  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 15:47:36.282  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 15:47:36.284  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 1.049 seconds (JVM running for 14160.084)
+2021-12-14 15:47:36.286  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 15:47:36.325  INFO 22256 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-14 15:47:36.325  INFO 22256 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-14 15:47:36.326  INFO 22256 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-14 16:48:01.404  INFO 22256 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:48:01.406  INFO 22256 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-12-14 16:48:01.414  INFO 22256 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-12-14 16:48:01.673  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 16:48:01.673  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 16:48:01.863  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 16:48:01.886  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2021-12-14 16:48:02.001  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 16:48:02.002  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 16:48:02.002  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 16:48:02.018  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 16:48:02.018  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 343 ms
+2021-12-14 16:48:02.058  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 16:48:02.064  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-12-14 16:48:02.068  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-12-14 16:48:02.069  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 16:48:02.150  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 16:48:02.150  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:48:02.218  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 16:48:02.257  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26938721, org.springframework.security.web.context.SecurityContextPersistenceFilter@74d81d8f, org.springframework.security.web.header.HeaderWriterFilter@6e7453e1, org.springframework.security.web.authentication.logout.LogoutFilter@2bed17c1, tn.esprit.ecommerce.security.JWTAuthorizationFilter@232c91e0, tn.esprit.ecommerce.security.JWTAuthenticationFilter@620a577f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b88004, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@491f3009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62b4714a, org.springframework.security.web.session.SessionManagementFilter@7965f824, org.springframework.security.web.access.ExceptionTranslationFilter@79810202, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c1d8470]
+2021-12-14 16:48:02.322  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 16:48:02.327  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 16:48:02.329  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 0.68 seconds (JVM running for 17786.129)
+2021-12-14 16:48:02.330  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 16:48:30.349  INFO 22256 --- [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:48:30.350  INFO 22256 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2021-12-14 16:48:30.354  INFO 22256 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2021-12-14 16:48:30.513  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 16:48:30.513  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 16:48:30.739  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 16:48:30.769  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2021-12-14 16:48:30.847  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 16:48:30.847  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 16:48:30.847  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 16:48:30.862  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 16:48:30.863  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 347 ms
+2021-12-14 16:48:30.886  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 16:48:30.890  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2021-12-14 16:48:30.892  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2021-12-14 16:48:30.893  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 16:48:30.976  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 16:48:30.976  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:48:31.042  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 16:48:31.084  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5aa84cd4, org.springframework.security.web.context.SecurityContextPersistenceFilter@65fc5a5c, org.springframework.security.web.header.HeaderWriterFilter@220216df, org.springframework.security.web.authentication.logout.LogoutFilter@5d7a470c, tn.esprit.ecommerce.security.JWTAuthorizationFilter@6a3d6790, tn.esprit.ecommerce.security.JWTAuthenticationFilter@806ab82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2047bc3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12c1e203, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ea4e0a1, org.springframework.security.web.session.SessionManagementFilter@398e3a89, org.springframework.security.web.access.ExceptionTranslationFilter@261c6c5d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@161216dd]
+2021-12-14 16:48:31.141  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 16:48:31.145  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 16:48:31.147  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 0.658 seconds (JVM running for 17814.947)
+2021-12-14 16:48:31.148  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 16:53:08.566  INFO 22256 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:53:08.567  INFO 22256 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2021-12-14 16:53:08.572  INFO 22256 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2021-12-14 16:53:08.730  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 16:53:08.731  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 16:53:08.895  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 16:53:08.922  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2021-12-14 16:53:09.031  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 16:53:09.032  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 16:53:09.032  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 16:53:09.042  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 16:53:09.042  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 309 ms
+2021-12-14 16:53:09.067  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 16:53:09.071  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2021-12-14 16:53:09.075  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2021-12-14 16:53:09.076  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 16:53:09.164  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 16:53:09.165  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:53:09.259  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 16:53:09.324  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65666e3f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b83fe41, org.springframework.security.web.header.HeaderWriterFilter@783caabf, org.springframework.security.web.authentication.logout.LogoutFilter@7ce9ef90, tn.esprit.ecommerce.security.JWTAuthorizationFilter@1b3dfde7, tn.esprit.ecommerce.security.JWTAuthenticationFilter@5fb34611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9443482, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14301e47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f4304f1, org.springframework.security.web.session.SessionManagementFilter@6a4ad14e, org.springframework.security.web.access.ExceptionTranslationFilter@51727ee5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@383f11ff]
+2021-12-14 16:53:09.329  WARN 22256 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoData' defined in tn.esprit.ecommerce.EcommerceApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete Statement
+
+2021-12-14 16:53:09.330  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:53:09.330  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2021-12-14 16:53:09.339  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2021-12-14 16:53:09.340  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-14 16:53:09.347  INFO 22256 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 16:53:09.517 ERROR 22256 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoData' defined in tn.esprit.ecommerce.EcommerceApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete Statement
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.7.jar:2.5.7]
+	at tn.esprit.ecommerce.EcommerceApplication.main(EcommerceApplication.java:23) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.7.jar:2.5.7]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete Statement
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete Statement
+
+	at tn.esprit.ecommerce.EcommerceApplication.demoData(EcommerceApplication.java:42) [classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$1960ac56.CGLIB$demoData$0(<generated>) ~[classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$1960ac56$$FastClassBySpringCGLIB$$3397c681.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.13.jar:5.3.13]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$1960ac56.demoData(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+
+2021-12-14 16:54:47.884  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 16:54:47.884  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 16:54:48.077  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 16:54:48.098  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2021-12-14 16:54:48.538  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 16:54:48.538  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 16:54:48.538  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 16:54:48.553  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-12-14 16:54:48.553  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 655 ms
+2021-12-14 16:54:48.584  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 16:54:48.588  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2021-12-14 16:54:48.592  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2021-12-14 16:54:48.593  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 16:54:48.675  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 16:54:48.676  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:54:48.739  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 16:54:48.775  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bc38bcb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3825afdf, org.springframework.security.web.header.HeaderWriterFilter@7ea74edf, org.springframework.security.web.authentication.logout.LogoutFilter@5370c0d7, tn.esprit.ecommerce.security.JWTAuthorizationFilter@b066961, tn.esprit.ecommerce.security.JWTAuthenticationFilter@4f41e0d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42094094, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69c3fbc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46918462, org.springframework.security.web.session.SessionManagementFilter@b29697e, org.springframework.security.web.access.ExceptionTranslationFilter@7761a6e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@597a0466]
+2021-12-14 16:54:48.889  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 16:54:48.894  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 16:54:48.897  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 1.036 seconds (JVM running for 18192.696)
+2021-12-14 16:54:48.897  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 16:57:34.176  INFO 22256 --- [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:57:34.178  INFO 22256 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2021-12-14 16:57:34.183  INFO 22256 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2021-12-14 16:57:34.413  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 16:57:34.413  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 16:57:34.590  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 16:57:34.612  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2021-12-14 16:57:34.735  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 16:57:34.736  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 16:57:34.736  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 16:57:34.749  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-12-14 16:57:34.749  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 334 ms
+2021-12-14 16:57:34.774  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 16:57:34.777  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2021-12-14 16:57:34.780  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2021-12-14 16:57:34.781  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 16:57:34.893  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 16:57:34.894  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:57:34.971  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 16:57:35.037  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40c67905, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b9ec936, org.springframework.security.web.header.HeaderWriterFilter@56d0fb06, org.springframework.security.web.authentication.logout.LogoutFilter@18d98e93, tn.esprit.ecommerce.security.JWTAuthorizationFilter@1c90470b, tn.esprit.ecommerce.security.JWTAuthenticationFilter@f860392, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a74bbf0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b2d7573, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5871d50, org.springframework.security.web.session.SessionManagementFilter@222594aa, org.springframework.security.web.access.ExceptionTranslationFilter@490f0a87, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7faea4a6]
+2021-12-14 16:57:35.155  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 16:57:35.159  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 16:57:35.163  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 0.774 seconds (JVM running for 18358.963)
+2021-12-14 16:57:35.164  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 16:58:10.259  INFO 22256 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:58:10.261  INFO 22256 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2021-12-14 16:58:10.266  INFO 22256 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2021-12-14 16:58:10.503  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 16:58:10.503  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 16:58:10.690  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 16:58:10.718  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+2021-12-14 16:58:10.827  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 16:58:10.827  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 16:58:10.828  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 16:58:10.844  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-12-14 16:58:10.845  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2021-12-14 16:58:10.882  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 16:58:10.888  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2021-12-14 16:58:10.893  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2021-12-14 16:58:10.894  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 16:58:10.997  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 16:58:10.998  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 16:58:11.078  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 16:58:11.136  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1589961b, org.springframework.security.web.context.SecurityContextPersistenceFilter@eb98fd4, org.springframework.security.web.header.HeaderWriterFilter@394682ee, org.springframework.security.web.authentication.logout.LogoutFilter@22c0c8a2, tn.esprit.ecommerce.security.JWTAuthorizationFilter@5569162, tn.esprit.ecommerce.security.JWTAuthenticationFilter@2c8b951c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77621d76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a3ea086, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bb1b030, org.springframework.security.web.session.SessionManagementFilter@9f27272, org.springframework.security.web.access.ExceptionTranslationFilter@3da88154, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27d40d30]
+2021-12-14 16:58:11.345  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 16:58:11.353  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 16:58:11.357  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 0.881 seconds (JVM running for 18395.156)
+2021-12-14 16:58:11.358  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 17:00:25.357  INFO 22256 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:00:25.359  INFO 22256 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2021-12-14 17:00:25.363  INFO 22256 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2021-12-14 17:00:25.526  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 22256 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 17:00:25.526  INFO 22256 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 17:00:25.717  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 17:00:25.736  INFO 22256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2021-12-14 17:00:25.830  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 17:00:25.831  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 17:00:25.831  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 17:00:25.843  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-12-14 17:00:25.843  INFO 22256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 315 ms
+2021-12-14 17:00:25.880  INFO 22256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 17:00:25.887  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2021-12-14 17:00:25.892  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2021-12-14 17:00:25.892  INFO 22256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 17:00:25.988  INFO 22256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 17:00:25.988  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:00:26.043  WARN 22256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 17:00:26.083  INFO 22256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8d0bd45, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cdf8f69, org.springframework.security.web.header.HeaderWriterFilter@3906fa14, org.springframework.security.web.authentication.logout.LogoutFilter@4e137f35, tn.esprit.ecommerce.security.JWTAuthorizationFilter@7cce54dd, tn.esprit.ecommerce.security.JWTAuthenticationFilter@46773e6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1daea108, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13763ef3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50a05ef9, org.springframework.security.web.session.SessionManagementFilter@1978165, org.springframework.security.web.access.ExceptionTranslationFilter@4ed9e527, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@474a2163]
+2021-12-14 17:00:26.203  WARN 22256 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoData' defined in tn.esprit.ecommerce.EcommerceApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+2021-12-14 17:00:26.203  INFO 22256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:00:26.204  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2021-12-14 17:00:26.209  INFO 22256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2021-12-14 17:00:26.210  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-14 17:00:26.213  INFO 22256 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 17:00:26.218 ERROR 22256 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoData' defined in tn.esprit.ecommerce.EcommerceApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.7.jar:2.5.7]
+	at tn.esprit.ecommerce.EcommerceApplication.main(EcommerceApplication.java:27) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.7.jar:2.5.7]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 24 common frames omitted
+Caused by: org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:385) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.13.jar:5.3.13]
+	at com.sun.proxy.$Proxy202.findByEmail(Unknown Source) ~[na:na]
+	at tn.esprit.ecommerce.service.AppUserServiceImpl.addAdmin(AppUserServiceImpl.java:98) ~[classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication.demoData(EcommerceApplication.java:50) [classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$1960ac56.CGLIB$demoData$0(<generated>) ~[classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$1960ac56$$FastClassBySpringCGLIB$$3397c681.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.13.jar:5.3.13]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$1960ac56.demoData(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1659) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:406) ~[spring-orm-5.3.13.jar:5.3.13]
+	at com.sun.proxy.$Proxy206.getSingleResult(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	... 44 common frames omitted
+
+2021-12-14 17:01:22.865  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 17956 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 17:01:22.867  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 17:01:22.930  INFO 17956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-14 17:01:22.931  INFO 17956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-14 17:01:23.627  INFO 17956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 17:01:23.709  INFO 17956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2021-12-14 17:01:24.459  INFO 17956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 17:01:24.469  INFO 17956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 17:01:24.470  INFO 17956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 17:01:24.562  INFO 17956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 17:01:24.563  INFO 17956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1632 ms
+2021-12-14 17:01:24.869  INFO 17956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 17:01:24.936  INFO 17956 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-14 17:01:25.115  INFO 17956 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-14 17:01:25.266  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-14 17:01:25.469  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-14 17:01:25.490  INFO 17956 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 17:01:26.202  INFO 17956 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 17:01:26.212  INFO 17956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:01:26.688  WARN 17956 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 17:01:26.950  INFO 17956 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a9295a3, org.springframework.security.web.context.SecurityContextPersistenceFilter@770d655e, org.springframework.security.web.header.HeaderWriterFilter@4891f339, org.springframework.security.web.authentication.logout.LogoutFilter@6c5e7875, tn.esprit.ecommerce.security.JWTAuthorizationFilter@6af14b93, tn.esprit.ecommerce.security.JWTAuthenticationFilter@22e2f0ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76676f40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7652f8f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@380f715, org.springframework.security.web.session.SessionManagementFilter@69476073, org.springframework.security.web.access.ExceptionTranslationFilter@4b7afabe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70bb9db6]
+2021-12-14 17:01:28.349  INFO 17956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 17:01:28.382  INFO 17956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 17:01:28.396  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 5.964 seconds (JVM running for 7.021)
+2021-12-14 17:08:07.966  INFO 17956 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:08:07.970  INFO 17956 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-14 17:08:07.980  INFO 17956 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-14 17:08:08.183  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 17956 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 17:08:08.183  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 17:08:08.480  INFO 17956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 17:08:08.513  INFO 17956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+2021-12-14 17:08:08.794  INFO 17956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 17:08:08.796  INFO 17956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 17:08:08.796  INFO 17956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 17:08:08.814  INFO 17956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 17:08:08.814  INFO 17956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 628 ms
+2021-12-14 17:08:08.876  INFO 17956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 17:08:08.883  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-14 17:08:08.887  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-14 17:08:08.888  INFO 17956 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 17:08:09.120  INFO 17956 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 17:08:09.121  INFO 17956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:08:09.227  WARN 17956 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 17:08:09.323  INFO 17956 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68348299, org.springframework.security.web.context.SecurityContextPersistenceFilter@5138fc3, org.springframework.security.web.header.HeaderWriterFilter@5eff612, org.springframework.security.web.authentication.logout.LogoutFilter@2736cef5, tn.esprit.ecommerce.security.JWTAuthorizationFilter@6a85595d, tn.esprit.ecommerce.security.JWTAuthenticationFilter@723860a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55318eb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f14bd61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aa2f1a0, org.springframework.security.web.session.SessionManagementFilter@622fcb6, org.springframework.security.web.access.ExceptionTranslationFilter@2baf7ba1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4af84d48]
+2021-12-14 17:08:09.440  INFO 17956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 17:08:09.448  INFO 17956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 17:08:09.453  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 1.312 seconds (JVM running for 408.078)
+2021-12-14 17:08:09.456  INFO 17956 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-14 17:10:08.317  INFO 17956 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:10:08.318  INFO 17956 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-14 17:10:08.323  INFO 17956 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-14 17:10:08.506  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 17956 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 17:10:08.506  INFO 17956 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 17:10:08.746  INFO 17956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 17:10:08.778  INFO 17956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2021-12-14 17:10:08.941  INFO 17956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 17:10:08.942  INFO 17956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 17:10:08.942  INFO 17956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 17:10:08.958  INFO 17956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 17:10:08.959  INFO 17956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 449 ms
+2021-12-14 17:10:09.004  INFO 17956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 17:10:09.011  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-12-14 17:10:09.017  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-12-14 17:10:09.017  INFO 17956 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 17:10:09.192  INFO 17956 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 17:10:09.193  INFO 17956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:10:09.282  WARN 17956 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 17:10:09.342  INFO 17956 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39362705, org.springframework.security.web.context.SecurityContextPersistenceFilter@8f609dd, org.springframework.security.web.header.HeaderWriterFilter@64f182fd, org.springframework.security.web.authentication.logout.LogoutFilter@63f13d56, tn.esprit.ecommerce.security.JWTAuthorizationFilter@6895726d, tn.esprit.ecommerce.security.JWTAuthenticationFilter@233848e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72d9da13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ad758df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e9bf0d5, org.springframework.security.web.session.SessionManagementFilter@bf953c2, org.springframework.security.web.access.ExceptionTranslationFilter@23ab2fc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@455d1a65]
+2021-12-14 17:10:09.381  WARN 17956 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoData' defined in tn.esprit.ecommerce.EcommerceApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+2021-12-14 17:10:09.382  INFO 17956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:10:09.382  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-12-14 17:10:09.389  INFO 17956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-12-14 17:10:09.390  INFO 17956 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-14 17:10:09.398  INFO 17956 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-14 17:10:09.432 ERROR 17956 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoData' defined in tn.esprit.ecommerce.EcommerceApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-2.5.7.jar:2.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.7.jar:2.5.7]
+	at tn.esprit.ecommerce.EcommerceApplication.main(EcommerceApplication.java:35) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.7.jar:2.5.7]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'demoData' threw exception; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 24 common frames omitted
+Caused by: org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:385) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.13.jar:5.3.13]
+	at com.sun.proxy.$Proxy114.findByNomProduit(Unknown Source) ~[na:na]
+	at tn.esprit.ecommerce.service.ProductServiceImpl.addProduct(ProductServiceImpl.java:19) ~[classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication.demoData(EcommerceApplication.java:85) [classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$4329b4d1.CGLIB$demoData$0(<generated>) ~[classes/:na]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$4329b4d1$$FastClassBySpringCGLIB$$27812441.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.13.jar:5.3.13]
+	at tn.esprit.ecommerce.EcommerceApplication$$EnhancerBySpringCGLIB$$4329b4d1.demoData(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1659) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:406) ~[spring-orm-5.3.13.jar:5.3.13]
+	at com.sun.proxy.$Proxy117.getSingleResult(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:155) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:143) ~[spring-data-jpa-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.7.jar:2.5.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	... 44 common frames omitted
+
+2021-12-14 17:11:36.169  INFO 3040 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Starting EcommerceApplication using Java 1.8.0_221 on DESKTOP-2GK2TEI with PID 3040 (C:\Work\workspace-sts\ecommerce\target\classes started by ASUS in C:\Work\workspace-sts\ecommerce)
+2021-12-14 17:11:36.171  INFO 3040 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : No active profile set, falling back to default profiles: default
+2021-12-14 17:11:36.243  INFO 3040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-14 17:11:36.243  INFO 3040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-14 17:11:36.968  INFO 3040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-14 17:11:37.051  INFO 3040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2021-12-14 17:11:37.766  INFO 3040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-14 17:11:37.776  INFO 3040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 17:11:37.777  INFO 3040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-14 17:11:37.877  INFO 3040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 17:11:37.877  INFO 3040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1633 ms
+2021-12-14 17:11:38.194  INFO 3040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-14 17:11:38.248  INFO 3040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-14 17:11:38.403  INFO 3040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-14 17:11:38.499  INFO 3040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-14 17:11:38.651  INFO 3040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-14 17:11:38.668  INFO 3040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-14 17:11:39.385  INFO 3040 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-14 17:11:39.394  INFO 3040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:11:39.908  WARN 3040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 17:11:40.273  INFO 3040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6769d98, org.springframework.security.web.context.SecurityContextPersistenceFilter@43e59516, org.springframework.security.web.header.HeaderWriterFilter@7b9010ce, org.springframework.security.web.authentication.logout.LogoutFilter@32f55829, tn.esprit.ecommerce.security.JWTAuthorizationFilter@3daa0118, tn.esprit.ecommerce.security.JWTAuthenticationFilter@3dff0c07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c0fbd22, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a85368b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33e6840c, org.springframework.security.web.session.SessionManagementFilter@5eeffe46, org.springframework.security.web.access.ExceptionTranslationFilter@4e9cd205, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d5d2e37]
+2021-12-14 17:11:42.058  INFO 3040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-14 17:11:42.094  INFO 3040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-14 17:11:42.105  INFO 3040 --- [restartedMain] t.esprit.ecommerce.EcommerceApplication  : Started EcommerceApplication in 6.466 seconds (JVM running for 7.612)
+2021-12-14 17:11:59.543  INFO 3040 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-14 17:11:59.543  INFO 3040 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-14 17:11:59.545  INFO 3040 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-14 17:12:52.143  INFO 3040 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-12-14 17:12:52.515  INFO 3040 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-14 17:12:52.520  INFO 3040 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-14 17:12:52.531  INFO 3040 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

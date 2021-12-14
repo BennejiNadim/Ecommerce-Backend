@@ -15,6 +15,7 @@ public interface AppUserService {
 	public List<AppUser> findAllUsers();
 	public AppUser findByEmail(String Email);
 	public AppUser findByFullName(String fullName);
+	public AppUser addAdmin(AppUser user);
 	
 /*	public List<AppUser> findAllUsersOrderedByEmailAsc();
 	public List<AppUser> findAllUsersOrderedByEmailDesc();
